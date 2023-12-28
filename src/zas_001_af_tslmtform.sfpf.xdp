@@ -1,0 +1,952 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.1.20140218.1.907162_SAP" APIVersion="3.6.13324.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2023-09-10T20:18:27Z" uuid="3f756fa3-6a85-400d-b39b-086e17af3c34">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/3.3/">
+   <?formServer defaultPDFRenderFormat acrobat10.0dynamic?>
+   <subform layout="tb" locale="en_US" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <contentArea h="123.825mm" id="contentArea_ID" w="203.2mm" x="6.35mm" y="76.2mm"/>
+            <medium long="11in" short="8.5in" stock="letter"/>
+            <subform h="69.85mm" name="Subform1" w="203.2mm" x="6.35mm" y="3.175mm">
+               <bind match="none"/>
+               <field h="9mm" locale="tr_TR" name="DATE" w="62mm" x="136.525mm" y="12.7mm">
+                  <ui>
+                     <dateTimeEdit>
+                        <border presence="hidden"/>
+                        <margin/>
+                     </dateTimeEdit>
+                     <picture>date{DD.MM.YYYY}</picture>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <caption reserve="25mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="31F1B738-3BB7-4215-A10E-4C18F1CF385D">Günün Tarihi:</text>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.SFPSY.DATE">
+                     <picture>date{YYYY-MM-DD}</picture>
+                  </bind>
+                  <desc>
+                     <text name="Schema Annotation">Sistem tarihi</text>
+                  </desc>
+                  <validate nullTest="error">
+                     <picture>date{DD.MM.YYYY}</picture>
+                  </validate>
+                  <format>
+                     <picture>date{DD.MM.YYYY}</picture>
+                  </format>
+               </field>
+               <field h="5.825mm" name="VBELN" w="62mm" x="136.525mm" y="41.275mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="22.0133mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="49274F63-6D31-47E1-92C1-2036F0E7034A">Teslimat No:</text>
+                     </value>
+                  </caption>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+                  <bind match="dataRef" ref="$.IS_HEADER.VBELN"/>
+                  <desc>
+                     <text name="Schema Annotation">Teslimat</text>
+                  </desc>
+               </field>
+               <field h="6.35mm" name="KUNNR" w="62mm" x="136.525mm" y="47.625mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="22.0133mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="6EB1EBE2-D8FC-4029-9D29-D58CF24D4AB1">Müşteri       :</text>
+                     </value>
+                  </caption>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+                  <bind match="dataRef" ref="$.IS_HEADER.KUNNR"/>
+                  <desc>
+                     <text name="Schema Annotation">Malı teslim alan</text>
+                  </desc>
+               </field>
+               <field h="6.35mm" name="ROUTE" w="62mm" x="136.525mm" y="53.975mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden"/>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="22.0133mm">
+                     <para vAlign="middle"/>
+                     <value>
+                        <text xliff:rid="AB284CD4-7918-4374-9678-C76A2173DC67">Rota           :</text>
+                     </value>
+                  </caption>
+                  <value>
+                     <text maxChars="6"/>
+                  </value>
+                  <bind match="dataRef" ref="$.IS_HEADER.ROUTE"/>
+                  <desc>
+                     <text name="Schema Annotation">Rota</text>
+                  </desc>
+               </field>
+               <draw h="50.8mm" name="Image1" w="41.275mm" x="9.525mm" y="12.7mm">
+                  <ui>
+                     <imageEdit/>
+                  </ui>
+               </draw>
+               <?templateDesigner expand 1?></subform>
+            <draw h="5.2331mm" name="Text1" w="32.964mm" x="152.4mm" y="203.2mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <value>
+                  <text xliff:rid="61B01937-4780-4256-88AD-FC921673DBF9">Textasdqweqweqwe</text>
+               </value>
+               <font typeface="Arial"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <?renderCache.bounds 90607 12000 0 0 1417 1417 0 0?>
+               <?renderCache.textRun 16 Textasdqweqweqwe 0 1417 9313 0 0 0 "Arial" 0 0 10000 ISO-8859-1?></draw>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform layout="tb" w="203.63mm">
+         <subform columnWidths="25.33mm 20mm 20mm 20mm 20mm 23.821mm 34.217mm 20mm 20mm" layout="table" name="IT_ITEM">
+            <subform id="overflowLeader_ID" layout="row" name="overflowLeader">
+               <draw minH="1mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="0DAC26F8-A97B-49DD-9DBA-D8DAC903E493">Malı Teslim Alan</text>
+                  </value>
+                  <font size="8pt" typeface="Arial"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw minH="1mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="7EDDB04F-DC79-4917-BEB3-A5988E67E1D6">Teslimat No</text>
+                  </value>
+                  <font size="8pt" typeface="Arial"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw minH="1mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="A7642E72-89A4-4DBA-9436-E888750911D4">Kalem No</text>
+                  </value>
+                  <font size="8pt" typeface="Arial"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw minH="1mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="465CA081-732A-4985-A550-49EA4C57AF70">Kalem Tipi</text>
+                  </value>
+                  <font size="8pt" typeface="Arial"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw minH="1mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="77A88763-179F-4750-AB23-B813D23079E3">Yaratan</text>
+                  </value>
+                  <font size="8pt" typeface="Arial"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw minH="1mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="2624A549-FB77-496E-85EC-D08F68A98382">Mal Çıkış Tarihi</text>
+                  </value>
+                  <font size="8pt" typeface="Arial"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw minH="1mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="F7F0E1FD-0149-4A35-84C9-3987E412A5F0">Malzeme</text>
+                  </value>
+                  <font size="8pt" typeface="Arial"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw minH="1mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="333216CE-BFEA-4CA9-BC9E-849E16E6A692">Net ağırlık</text>
+                  </value>
+                  <font size="8pt" typeface="Arial"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw minH="1mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="BCC64524-B816-418D-B4ED-A46E79B73EE8">Ağırlık Birimi</text>
+                  </value>
+                  <font size="8pt" typeface="Arial"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <assist role="TH"/>
+               <occur max="-1"/>
+               <bind match="none"/>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="row" name="DATA">
+               <field minH="2mm" name="KUNNR" w="62mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+                  <bind match="dataRef" ref="$.KUNNR"/>
+                  <desc>
+                     <text name="Schema Annotation">Malı teslim alan</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field minH="2mm" name="VBELN" w="62mm" x="2.440944in">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <text maxChars="10"/>
+                  </value>
+                  <bind match="dataRef" ref="$.VBELN"/>
+                  <desc>
+                     <text name="Schema Annotation">Teslimat</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field minH="2mm" name="POSNR" w="62mm" x="4.881889in">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <text maxChars="6"/>
+                  </value>
+                  <bind match="dataRef" ref="$.POSNR"/>
+                  <desc>
+                     <text name="Schema Annotation">Teslimat kalemi</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field minH="2mm" name="PSTYV" w="62mm" y="0.354333in">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <text maxChars="4"/>
+                  </value>
+                  <bind match="dataRef" ref="$.PSTYV"/>
+                  <desc>
+                     <text name="Schema Annotation">Teslimat kalemi tipi</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field minH="2mm" name="ERNAM" w="62mm" x="2.440944in" y="0.354333in">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <text maxChars="12"/>
+                  </value>
+                  <bind match="dataRef" ref="$.ERNAM"/>
+                  <desc>
+                     <text name="Schema Annotation">Nesneyi yaratan sorumlunun adı</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field minH="2mm" name="WADAT_IST" w="62mm" x="4.881889in" y="0.354333in">
+                  <ui>
+                     <dateTimeEdit>
+                        <margin/>
+                     </dateTimeEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <date/>
+                  </value>
+                  <bind match="dataRef" ref="$.WADAT_IST">
+                     <picture>date{YYYY-MM-DD}</picture>
+                  </bind>
+                  <desc>
+                     <text name="Schema Annotation">Fiili mal hareketi tarihi</text>
+                  </desc>
+                  <validate nullTest="error"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field minH="2mm" name="MATNR" w="62mm" y="0.708667in">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <text maxChars="40"/>
+                  </value>
+                  <bind match="dataRef" ref="$.MATNR"/>
+                  <desc>
+                     <text name="Schema Annotation">Malzeme numarası</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field minH="2mm" name="NTGEW" w="62mm" x="2.440944in" y="0.708667in">
+                  <ui>
+                     <numericEdit>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <decimal fracDigits="3" leadDigits="12"/>
+                  </value>
+                  <bind match="dataRef" ref="$.NTGEW"/>
+                  <desc>
+                     <text name="Schema Annotation">Net ağırlık</text>
+                  </desc>
+                  <validate nullTest="error"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <field minH="2mm" name="GEWEI" w="62mm" x="4.881889in" y="0.708667in">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <text maxChars="3"/>
+                  </value>
+                  <bind match="dataRef" ref="$.GEWEI"/>
+                  <desc>
+                     <text name="Schema Annotation">Ağırlık birimi</text>
+                  </desc>
+                  <border>
+                     <edge/>
+                  </border>
+               </field>
+               <assist role="TR"/>
+               <occur max="-1"/>
+               <bind match="dataRef" ref="$.DATA[*]"/>
+               <?templateDesigner expand 1?></subform>
+            <subform id="DATA_ID" layout="row" name="DATA">
+               <assist role="TF"/>
+               <draw colSpan="6" h="3.822mm" presence="invisible" w="129.151mm" y="0.001mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text>          </text>
+                  </value>
+                  <font size="8pt" typeface="Arial"/>
+                  <para vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw minH="2mm" w="62mm" y="0.001mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="1CBE4C23-B1D0-4AA9-BEF7-E5BDEC4C3045">Sub Total</text>
+                  </value>
+                  <font size="8pt" typeface="Arial"/>
+                  <para hAlign="right" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <field access="readOnly" minH="2mm" name="SUB_NTGEW" w="39.832mm" y="0.001mm">
+                  <ui>
+                     <numericEdit>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <decimal fracDigits="3" leadDigits="12"/>
+                  </value>
+                  <border>
+                     <edge/>
+                  </border>
+                  <bind match="dataRef" ref="$record.IT_ITEM.DATA[*].SUB_NTGEW"/>
+                  <desc>
+                     <text name="Schema Annotation">Net ağırlık</text>
+                  </desc>
+                  <calculate>
+                     <script contentType="application/x-javascript">var fields = xfa.layout.pageContent(xfa.layout.page(this)-1, "field",0);
+var total = 0;
+for(var i=0; i &lt;= fields.length-1; i++) {
+if (fields.item(i).name == "NTGEW"){
+total = total + fields.item(i).rawValue;
+}
+}
+this.rawValue = total;
+
+</script>
+                  </calculate>
+               </field>
+               <draw minH="2mm" presence="invisible" w="62mm" y="0.001mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <para vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <border>
+                  <edge presence="hidden"/>
+               </border>
+               <?templateDesigner expand 1?></subform>
+            <bind match="dataRef" ref="$.IT_ITEM"/>
+            <desc>
+               <text name="Schema Annotation">Teslimat Formu TT</text>
+            </desc>
+            <overflow leader="overflowLeader" trailer="DATA[1]"/>
+            <subform layout="row" name="DATA">
+               <assist role="TF"/>
+               <draw colSpan="6" h="3.822mm" presence="invisible" w="129.151mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <para vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <draw minH="2mm" w="62mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <value>
+                     <text xliff:rid="EDF6BB8D-FF1D-441D-8C89-8C50FA87F26B">Grand Total</text>
+                  </value>
+                  <font baselineShift="0pt" size="8pt" typeface="Arial"/>
+                  <para hAlign="right" marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <field minH="2mm" name="TOTAL_NTGEW" w="39.832mm" y="0mm">
+                  <ui>
+                     <numericEdit>
+                        <margin/>
+                     </numericEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para hAlign="center" vAlign="middle"/>
+                  <value>
+                     <decimal fracDigits="3" leadDigits="12"/>
+                  </value>
+                  <border>
+                     <edge/>
+                  </border>
+                  <desc>
+                     <text name="Schema Annotation">Net ağırlık</text>
+                  </desc>
+                  <validate nullTest="error"/>
+                  <bind match="dataRef" ref="$record.IT_ITEM.DATA[*].TOTAL_NTGEW"/>
+                  <calculate>
+                     <script>
+sum(IT_ITEM.DATA[*].NTGEW)
+</script>
+                  </calculate>
+               </field>
+               <draw minH="2mm" presence="invisible" w="62mm" y="0mm">
+                  <ui>
+                     <textEdit>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="8pt" typeface="Arial"/>
+                  <para vAlign="middle"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <border>
+                     <edge/>
+                  </border>
+               </draw>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">11.0.1.20140218.1.907162.903801</text>
+      </desc>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 136 36 0003001D00240025002A002E00300031003500360037003C0044004500470048004B004C004E004F005000510052005300540055005600570058005A005B005D00640081 :ABGKMNRSTYabdehiklmnopqrstuwxzÇü?>
+      <?renderCache.subset "Arial" 0 0 UTF-16 2 52 0003001D002A00370044004B004C00510055008100D500F700FA?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner Grid show:1, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000)?>
+   <?templateDesigner WidowOrphanControl 0?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner FormTargetVersion 33?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 86?></template>
+<config xmlns="http://www.xfa.org/schema/xci/3.0/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>https://SAP.NDBSTR.COM:1083/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>8</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZAS_001_AF_TSLMTFORM">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+</connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <SFPSY>
+            <DATE/>
+            <TIME/>
+            <USERNAME/>
+            <SUBRC/>
+         </SFPSY>
+         <IS_HEADER>
+            <VBELN/>
+            <KUNNR/>
+            <ROUTE/>
+         </IS_HEADER>
+         <IT_ITEM dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <KUNNR/>
+               <VBELN/>
+               <POSNR/>
+               <PSTYV/>
+               <ERNAM/>
+               <WADAT_IST/>
+               <MATNR/>
+               <NTGEW/>
+               <GEWEI/>
+               <ROUTE/>
+               <SUB_NTGEW/>
+               <TOTAL_NTGEW/>
+            </DATA>
+         </IT_ITEM>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+   <locale desc="Turkish (Turkey)" name="tr_TR">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>Ocak</month>
+            <month>Şubat</month>
+            <month>Mart</month>
+            <month>Nisan</month>
+            <month>Mayıs</month>
+            <month>Haziran</month>
+            <month>Temmuz</month>
+            <month>Ağustos</month>
+            <month>Eylül</month>
+            <month>Ekim</month>
+            <month>Kasım</month>
+            <month>Aralık</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Oca</month>
+            <month>Şub</month>
+            <month>Mar</month>
+            <month>Nis</month>
+            <month>May</month>
+            <month>Haz</month>
+            <month>Tem</month>
+            <month>Ağu</month>
+            <month>Eyl</month>
+            <month>Eki</month>
+            <month>Kas</month>
+            <month>Ara</month>
+         </monthNames>
+         <dayNames>
+            <day>Pazar</day>
+            <day>Pazartesi</day>
+            <day>Salı</day>
+            <day>Çarşamba</day>
+            <day>Perşembe</day>
+            <day>Cuma</day>
+            <day>Cumartesi</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Paz</day>
+            <day>Pzt</day>
+            <day>Sal</day>
+            <day>Çar</day>
+            <day>Per</day>
+            <day>Cum</day>
+            <day>Cmt</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">DD MMMM YYYY EEEE</datePattern>
+         <datePattern name="long">DD MMMM YYYY EEEE</datePattern>
+         <datePattern name="med">DD.MMM.YYYY</datePattern>
+         <datePattern name="short">DD.MM.YYYY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">HH:MM:SS Z</timePattern>
+         <timePattern name="long">HH:MM:SS Z</timePattern>
+         <timePattern name="med">HH:MM:SS</timePattern>
+         <timePattern name="short">HH:MM</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GanjkHmsSEDFwWxhKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">z,zz9 $</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">,</numberSymbol>
+         <numberSymbol name="grouping">.</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">TL</currencySymbol>
+         <currencySymbol name="isoname">TRL</currencySymbol>
+         <currencySymbol name="decimal">,</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+         <typeface name="Adobe Devanagari"/>
+      </typefaces>
+   </locale>
+</localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.4-c005 78.150055, 2013/08/07-22:58:47        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2023-09-10T20:18:27Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:3f756fa3-6a85-400d-b39b-086e17af3c34</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>11.0.1.20140218.1.907162.903801</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>
